@@ -1,4 +1,3 @@
-// Write your code here
 import ConfigurationContext from '../../context/ConfigurationContext'
 
 import './index.css'
@@ -14,15 +13,12 @@ const ConfigurationController = () => (
         onToggleShowLeftNavbar,
         onToggleShowRightNavbar,
       } = value
-
       const onChangeContent = () => {
         onToggleShowContent()
       }
-
       const onChangeLeftNavbar = event => {
         onToggleShowLeftNavbar(event.target.value)
       }
-
       const onChangeRightNavbar = event => {
         onToggleShowRightNavbar(event.target.value)
       }
@@ -72,4 +68,5 @@ const ConfigurationController = () => (
     }}
   </ConfigurationContext.Consumer>
 )
+
 export default ConfigurationController

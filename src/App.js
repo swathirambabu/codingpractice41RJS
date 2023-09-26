@@ -1,9 +1,10 @@
 import {Component} from 'react'
 
+import ConfigurationContext from './context/ConfigurationContext'
+
 import ConfigurationController from './components/ConfigurationController'
 
 import Layout from './components/Layout'
-import ConfigurationContext from './context/ConfigurationContext'
 
 import './App.css'
 
@@ -28,6 +29,7 @@ class App extends Component {
 
   render() {
     const {showContent, showLeftNavbar, showRightNavbar} = this.state
+
     return (
       <ConfigurationContext.Provider
         value={{
