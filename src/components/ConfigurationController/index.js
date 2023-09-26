@@ -3,8 +3,8 @@ import ConfigurationContext from '../../context/ConfigurationContext'
 
 import './index.css'
 
-const ConfigurationController = () => {
-  ;<ConfigurationContext.Consumer>
+const ConfigurationController = () => (
+  <ConfigurationContext.Consumer>
     {value => {
       const {
         showContent,
@@ -71,5 +71,5 @@ const ConfigurationController = () => {
       )
     }}
   </ConfigurationContext.Consumer>
-}
+)
 export default ConfigurationController
